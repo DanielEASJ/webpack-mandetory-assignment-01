@@ -10,12 +10,12 @@
   <h1>Weight Converter</h1> 
   <div id="content"></div>
 
-  <input id="InputField" type="number" placeholder="Weight" />
+  <form>
+    <input type="radio" name="converter" id="RadioToGram"  value="gram"> Gram
+    <input type="radio" name="converter" id="RadioToOunce"  value="ounce"> Ounce
+  </form>
 
-  <button id="ButtonToGrams">Convert To GRAMS</button>
-
-  <button id="ButtonToOunces">Convert to OUNCES</button>
-    
+  <input type="number" id="InputField" placeholder="Weight" required="required"/>
 
   <h2>Converted result: </h2>
 <span id="ResultOutput"> </span>
